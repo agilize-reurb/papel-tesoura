@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, Papel e Tesoura</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pedra, Papel e Tesoura</h1>
+        <div id="room-controls">
+            <input type="text" id="room-name" placeholder="Nome da Sala">
+            <button id="create-room">Criar Sala</button>
+            <button id="join-room">Entrar na Sala</button>
+        </div>
+        <div id="game-controls" style="display: none;">
+            <h2 id="room-status"></h2>
+            <button id="rock">Pedra</button>
+            <button id="paper">Papel</button>
+            <button id="scissors">Tesoura</button>
+            <div id="game-result"></div>
+        </div>
+        <div id="rooms-list">
+            <h2>Salas Disponíveis</h2>
+            <ul id="rooms"></ul>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stompjs/lib/stomp.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
